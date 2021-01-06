@@ -86,3 +86,11 @@ Sometimes you want to add **a** elemtns to your website before you know where th
 <input type = 'text'>
 
 ```
+
+## Create a Form Element
+
+The **action** attribute specifies where to send the form-data when a form is submitted.
+```
+<form action="/url-where-you-want-to-submit-form-data"> </form>
+
+```
