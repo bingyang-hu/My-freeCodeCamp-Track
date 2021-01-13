@@ -49,3 +49,56 @@ It works just like **.pop()** except it removes the first element instead of the
 Variables which are defined outside of a function block have **Global** scope.
 
 Variables which are used without the **var** keyword are automatically created in the global scope.
+
+
+## Testing Objects for Properties
+
+We can use **.hasOwnProperty(propname)** method of objects to determine if that object has the given property name.
+
+```
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  if (obj.hasOwnProperty(checkProp) ==true){
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+  return "Change Me!";
+  // Only change code above this line
+}
+
+
+```
+
+Notes:
++ Use return obj[checkProp] rather than obj.checkProp because checkProp here is already string.
+
+```
+var myObj = {top: "hat", bottom:"pants"};
+myObj["top"]   
+myObj.top
+
+```
+
+
+## Record Colletion
+```
+function updateRecords(object, id, prop, value) {
+  if(prop !== 'tracks' && value !== ""){
+    object[id][prop] = value;}
+   else if (prop === 'tracks' && !object[id].hasOwnProperty('tracks')){
+    object[id][prop] = [value];
+  } else if (prop === 'tracks' && value !== ''){
+    object[id][prop].push(value);
+  } else if (value === ""){
+    delete object[id][prop];
+  }
+  return object;
+}
+
+updateRecords(collection, 5439, 'artist', 'ABBA');
+
+```
+
+when check whether it's an empty string, just use !="", there is no space between two double quotes!
