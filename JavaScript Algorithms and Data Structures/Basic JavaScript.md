@@ -101,4 +101,41 @@ updateRecords(collection, 5439, 'artist', 'ABBA');
 
 ```
 
+
+
 when check whether it's an empty string, just use !="", there is no space between two double quotes!
+
+
+
+
+## Generate Random Fractions with JavaScript
+
+**Math.random()** function generates a random decimal number between 0 (inclusive) and 1 (exclusive).
+
+
+
+## Use the parseInt Function
+
+**parseInt()** function prses a string and returns an integer.
+
+```
+function convertToInteger(str){
+
+      return parseInt(str);
+}
+
+```
+
+
+## Use the Conditional(Ternary) Operator
+
+condition ? expression-if-true : expression-if-false;
+
+```
+function checkEqual(a,b){
+  return a===b ? "Equal" :"Not Equal";
+}
+
+checkEqual(1,2);
+
+```
