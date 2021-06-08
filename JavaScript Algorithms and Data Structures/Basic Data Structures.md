@@ -29,8 +29,19 @@ console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 ```
 
+## Global Scope and Functions
 
++ Variables which are defined **outside** of a function block have *Global* scope.
++ Variables which are declared without the **var** keyword are also created in the global scope.
 
+Therefore although oopsGlobal is not inside the fun2, since it is declared without **var** keyword it is created in the global scope, therefore it can be seen inside fun2.
+
+## Global vs. Local Scope in Functions
+
+It is possible to have both local and global variables with the same name. The **local** variable takes precedence over the global one.
+
+## Comparison with the Strict Equality Operator
+Unlike the equality operator, the strict one does **NOT** perform a type conversion.
 
 ## Remove Items Using splice()
 
