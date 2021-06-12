@@ -83,7 +83,14 @@ function sequentialSizes(val) {
 }
 
 sequentialSizes(1);
+
+
+
 '''
+
+#Build JavaScript Objects
+
+Objects in JS == Dictionary in Python == Hashmap in Java
 
 ## Remove Items Using splice()
 
