@@ -92,6 +92,20 @@ sequentialSizes(1);
 
 Objects in JS == Dictionary in Python == Hashmap in Java
 
+
+##Testing Objects for Properties
+To check whether a property exists in a given object:
+object.**hasOwnProperty(propname)**
+
+```JS
+var myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+```
+
 ## Remove Items Using splice()
 
 **splice()**'s first parameter repsetns the index on the array from which to begin removing elements while the second parameter indicates the number of elements to delete.
