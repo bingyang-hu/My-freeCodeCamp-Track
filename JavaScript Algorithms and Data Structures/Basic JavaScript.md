@@ -50,6 +50,60 @@ Variables which are defined outside of a function block have **Global** scope.
 
 Variables which are used without the **var** keyword are automatically created in the global scope.
 
+## Comparison with the Strict Equality Operator
+Unlike the equality operator, the strict one does **NOT** perform a type conversion.
+
+## Adding a Default Option in Switch Statements
+''' JavaScript
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+...
+  default:
+    defaultStatement;
+    break;
+}
+
+'''
+
+## Multiple Identical Options in Switch Statements
+'''
+function sequentialSizes(val) {
+  var answer = "";
+  // Only change code below this line
+
+  switch(val){
+    case 1:  // no semicolon here.
+    case 2:
+    case 3: answer = 'Low'; break;
+    case 4:
+    case 5:
+    case 6: answer = 'Mid'; break;
+    case 7:
+    case 8:
+    case 9: answer = "High";
+  }
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
+
+
+
+'''
+
+#Build JavaScript Objects
+
+Objects in JS == Dictionary in Python == Hashmap in Java
+
+
+
 
 ## Testing Objects for Properties
 
@@ -104,6 +158,21 @@ updateRecords(collection, 5439, 'artist', 'ABBA');
 
 
 when check whether it's an empty string, just use !="", there is no space between two double quotes!
+
+
+## Iterate with JavaScript Do...While Loops
+
+It will first do one pass of the code inside the loop no matter what. 
+``` js
+
+var ourArray = [];
+var i = 0;
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+
+```
 
 
 
