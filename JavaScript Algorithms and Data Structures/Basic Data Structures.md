@@ -36,61 +36,7 @@ console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 Therefore although oopsGlobal is not inside the fun2, since it is declared without **var** keyword it is created in the global scope, therefore it can be seen inside fun2.
 
-## Global vs. Local Scope in Functions
 
-It is possible to have both local and global variables with the same name. The **local** variable takes precedence over the global one.
-
-## Comparison with the Strict Equality Operator
-Unlike the equality operator, the strict one does **NOT** perform a type conversion.
-
-## Adding a Default Option in Switch Statements
-''' JavaScript
-switch (num) {
-  case value1:
-    statement1;
-    break;
-  case value2:
-    statement2;
-    break;
-...
-  default:
-    defaultStatement;
-    break;
-}
-
-'''
-
-## Multiple Identical Options in Switch Statements
-'''
-function sequentialSizes(val) {
-  var answer = "";
-  // Only change code below this line
-
-  switch(val){
-    case 1:  // no semicolon here.
-    case 2:
-    case 3: answer = 'Low'; break;
-    case 4:
-    case 5:
-    case 6: answer = 'Mid'; break;
-    case 7:
-    case 8:
-    case 9: answer = "High";
-  }
-
-  // Only change code above this line
-  return answer;
-}
-
-sequentialSizes(1);
-
-
-
-'''
-
-#Build JavaScript Objects
-
-Objects in JS == Dictionary in Python == Hashmap in Java
 
 
 ##Testing Objects for Properties
