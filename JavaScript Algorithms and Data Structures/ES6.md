@@ -9,3 +9,18 @@ A new keyword called **let** was introduced in ES6. When using let, a variable w
 ##Declare a Read-Only Variable with the const Keyword
 
 Variables declared using **const** are read-only, which means that once a variable is assigned with **const**,it cannot be reassigned.
+
+
+## Use Destrucring Assignment to Extract Values from Objects
+
+```ES5
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+
+```
+
+```ES6
+const { name, age } = user;
+```
