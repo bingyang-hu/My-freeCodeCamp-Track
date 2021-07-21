@@ -23,4 +23,15 @@ const age = user.age;
 
 ```ES6
 const { name, age } = user;
+
+
 ```
+
+##Use Destructuring Assignment to Assign Variables from Objects
+
+ How to assign a new variable name when extracting values:
+
+```ES6
+const{name:userName, age:userAge} = user;
+```
+Read it as 'get the value of **user.name** and assign it to a new variable named **userName**'.
